@@ -41,16 +41,16 @@ Here's a walkthrough of implemented user stories:
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[No outside resources were used]
+No outside resources were used
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it?
-[I encountered an issue conneting sound to buttons. I double checked my code as well as changed browsers which resolved the issue.]
+I encountered an issue conneting sound to buttons. I double checked my code as well as changed browsers which resolved the issue.
 
-3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[Are there any other projects likw this to create on my own time? I'd love to experiemnet more with this.]
+3. What questions about web development do you have after completing your submission? 
+Are there any other projects likw this to create on my own time? I'd love to experiemnet more with this.
 
-4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[With a few more hours on my hands I would try to implement as many optional features as possible as well as implemeenting some of my own features. ]
+4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific.
+With a few more hours on my hands I would try to implement as many optional features as possible as well as implemeenting some of my own features.
 
 
 
