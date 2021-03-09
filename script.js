@@ -1,21 +1,28 @@
 //Global constants 
-const clueHoldTime = 1000; //how long to hold each clue's light/sound
-const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global variables
-var pattern = [1,1,4,3,6,5]
+var pattern = [];
 var progress = 0;
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5; //must be between 0.0 and 1.0
 var guessCounter = 0;
+var clueHoldTime = 1000; //how long to hold each clue's light/sound
+var cluePauseTime = 333; //how long to pause in between clues
 
+function patternMaker(){
+  pattern = [];
+  for (let i = 0;i<6;i++){
+    pattern.push(Math.round(Math.random()*6)+1)
+  }
+}
 
 function startGame(){
   //initialize game variables
   progress = 0;
   gamePlaying = true;
+  patternMaker();
   
   //swap the Start and Stop buttons
   document.getElementById("startBtn").classList.add("hidden");
@@ -94,10 +101,13 @@ function playSingleClue(btn){
 
 function playClueSequence(){
   guessCounter = 0
+  clueHoldTime = 1000;
   let delay = nextClueWaitTime; //set delay to initial wait time
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
+    clueHoldTime -= 80;
+    cluePauseTime -= 10;
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
-    setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
+    setTimeout(playSingleClue,(delay),pattern[i]) // set a timeout to play that clue
     delay += (clueHoldTime)
     delay += (cluePauseTime);
   }
