@@ -56,7 +56,7 @@ With a few more hours on my hands I would try to implement as many optional feat
 
 ## License
 
-    Copyright [YOUR NAME]
+    Copyright Viktoriya Loshkarova
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
