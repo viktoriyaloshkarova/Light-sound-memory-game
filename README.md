@@ -36,7 +36,7 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](http://g.recordit.co/sNiVu6Ubuz.gif)
+![](http://g.recordit.co/2TrZR00bHt.gif)
 
 
 ## Reflection Questions
@@ -44,7 +44,7 @@ Here's a walkthrough of implemented user stories:
 No outside resources were used
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it?
-I encountered an issue conneting sound to buttons. I double checked my code as well as changed browsers which resolved the issue.
+I encountered an issue conneting sound to buttons. I double checked my code as well as changed browsers. I figured out that I need to switch to chrome for sound to work.
 
 3. What questions about web development do you have after completing your submission? 
 Are there any other projects likw this to create on my own time? I'd love to experiemnet more with this.
