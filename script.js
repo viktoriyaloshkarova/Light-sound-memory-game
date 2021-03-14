@@ -11,46 +11,6 @@ var guessCounter = 0;
 var clueHoldTime = 1000; //how long to hold each clue's light/sound
 var cluePauseTime = 333; //how long to pause in between clues
 
-function patternMaker(){
-  pattern = [];
-  for (let i = 0;i<6;i++){
-    pattern.push(Math.round(Math.random()*6)+1)
-  }
-}
-
-function startGame(){
-  //initialize game variables
-  progress = 0;
-  gamePlaying = true;
-  patternMaker();
-  
-  //swap the Start and Stop buttons
-  document.getElementById("startBtn").classList.add("hidden");
-  document.getElementById("stopBtn").classList.remove("hidden");
-  playClueSequence();
-}
-
-function stopGame(){
-  gamePlaying = false;
-  document.getElementById("startBtn").classList.remove("hidden");
-  document.getElementById("stopBtn").classList.add("hidden");
-}
-
-function loseGame(){
-  stopGame();
-  alert("Game Over. You lost.");
-}
-function winGame(){
-  stopGame();
-  alert("Game Over. You won!")
-}
-
-function lightButton(btn){
-  document.getElementById("button"+btn).classList.add("lit");
-}
-function clearButton(btn){
-  document.getElementById("button"+btn).classList.remove("lit");
-}
 
 // Sound Synthesis Functions
 const freqMap = {
@@ -91,6 +51,13 @@ g.gain.setValueAtTime(0,context.currentTime)
 o.connect(g)
 o.start(0)
 
+function lightButton(btn){
+  document.getElementById("button"+btn).classList.add("lit");
+}
+function clearButton(btn){
+  document.getElementById("button"+btn).classList.remove("lit");
+}
+
 function playSingleClue(btn){
   if(gamePlaying){
     lightButton(btn);
@@ -112,6 +79,47 @@ function playClueSequence(){
     delay += (cluePauseTime);
   }
 }
+
+function patternMaker(){
+  pattern = [];
+  for (let i = 0;i<6;i++){
+    pattern.push(Math.round(Math.random()*6)+1)
+  }
+}
+
+
+
+function startGame(){
+  //initialize game variables
+  progress = 0;
+  gamePlaying = true;
+  patternMaker();
+  
+  //swap the Start and Stop buttons
+  document.getElementById("startBtn").classList.add("hidden");
+  document.getElementById("stopBtn").classList.remove("hidden");
+  playClueSequence();
+}
+
+
+function stopGame(){
+  gamePlaying = false;
+  document.getElementById("startBtn").classList.remove("hidden");
+  document.getElementById("stopBtn").classList.add("hidden");
+}
+
+
+
+function loseGame(){
+  stopGame();
+  alert("Game Over. You lost.");
+}
+function winGame(){
+  stopGame();
+  alert("Game Over. You won!")
+}
+
+
 
 function guess(btn){
   console.log("user guessed: " + btn);
