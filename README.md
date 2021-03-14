@@ -38,13 +38,15 @@ The following **optional** features are implemented:
 Here's a walkthrough of implemented user stories:
 ![](http://g.recordit.co/2TrZR00bHt.gif)
 
+Youtube video link: https://youtu.be/XZ1n8cYwkKk
+
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 No outside resources were used
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it?
-I encountered an issue conneting sound to buttons. I double checked my code as well as changed browsers. I figured out that I need to switch to chrome for sound to work.
+I encountered an issue conneting sound to buttons. I double checked my code as well as changed browsers. I figured out that I need to switch to chrome for sound to work. I have also encountered an issue of showing all required functionality in a gif because gifs do not support sound. Therefore, I have posted a youtube video of my game that includes sound.
 
 3. What questions about web development do you have after completing your submission? 
 Are there any other projects likw this to create on my own time? I'd love to experiemnet more with this.
